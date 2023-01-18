@@ -26,7 +26,7 @@
 
 body {
   background-color: #0F0D13;
-  
+
   background-size: 200% 200%;
 
 
@@ -85,7 +85,7 @@ body * {
 .player {
   /* background-color: #2A2141; */
   background: linear-gradient(45deg, #2A2141, #4d4266);
-  
+
   animation: gradient 3s ease infinite;
   background-size: 200% 200%;
   padding: 28rem;
@@ -102,7 +102,7 @@ body * {
   box-shadow: 0rem 20px 50px rgba(0, 0, 0, 0.8);
 }
 
-.info-wrapper{
+.info-wrapper {
   display: flex;
   align-items: center;
   gap: 28rem;
@@ -136,9 +136,8 @@ body * {
   gap: 10rem;
 }
 
-.horizontal .controls
-{
-padding-inline: 50rem;
+.horizontal .controls {
+  padding-inline: auto;
 }
 
 .controls div {
@@ -194,6 +193,25 @@ padding-inline: 50rem;
   margin-top: 9.6rem;
 }
 
- #embed-iframe{
+#embed-iframe {
   display: none;
+}
+
+@media (max-width: 660px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 270px;
+    margin: auto;
+
+    height: auto;
+
+    padding-block: 60px;
+  }
+
+  .horizontal .controls {
+    padding-inline: 30px;
+  }
+
 }
