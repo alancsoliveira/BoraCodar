@@ -2,12 +2,12 @@ const audioVisionElement = document.querySelector('.Vision')
 const audioFireElement = document.querySelector('.Fire')
 const audioNeverStopElement = document.querySelector('.NeverStop')
 
-document.addEventListener('click', (event) => { playAud1(event) })
+document.addEventListener('click', (event) => { musicMusic(event) })
 
 let playing = false;
 let lastPlaying = false;
 
-function playAud1(event) {
+function musicMusic(event) {
   switch (event.target.id) {
     case "play-1":
       musicSelect = audioVisionElement
